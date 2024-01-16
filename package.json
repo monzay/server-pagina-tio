@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "start app.js",
-    "bulid": "yarn"
+    "start": "node app.js",
   },
   "keywords": [],
   "author": "",
