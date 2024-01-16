@@ -38,7 +38,7 @@ const creadorDeIndentificadorUnicoProducto = async () => {
 const app = express();
 app.use(express.json());
 const corsOptions = {
-  origin: 'https://tio-manualidades.netlify.app/', 
+  origin: 'https://tio-manualidades.netlify.app', 
   methods: 'GET,PUT,POST,DELETE',
   optionsSuccessStatus: 204,
 };
