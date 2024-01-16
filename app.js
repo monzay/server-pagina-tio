@@ -37,7 +37,12 @@ const creadorDeIndentificadorUnicoProducto = async () => {
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+  origin: 'https://tio-manualidades.netlify.app/', 
+  methods: 'GET,PUT,POST,DELETE',
+  optionsSuccessStatus: 204,
+};
+app.use(cors(corsOptions));
 app.use(morgan("dev"));
 const upload = multer({ dest: "uploads/" });
 
